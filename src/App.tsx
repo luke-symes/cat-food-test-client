@@ -1,4 +1,4 @@
-import cat from "./assets/cat.png";
+import cat from './assets/cat.png';
 
 function App() {
   return (
