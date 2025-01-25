@@ -53,6 +53,8 @@ With more time, there are several improvements I would make to this project to e
 
 - Intercept network calls and mock responses with [Mock Service Worker](https://mswjs.io/) to allow functionality without depending on the server.
 
+- Handle loading state in the UI with a skeleton or placeholder
+
 - Share the API schema from a single location so that a contract may be enforced between the client and server. Currently the client defines its own Zod schema and is unaware of any changes made on the backend.
 
 - Errors are logged to the console but would be better suited to an observability platform like Sentry
