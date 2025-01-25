@@ -1,5 +1,5 @@
 import { DeliveryResponse } from '../../types/delivery';
-import cat from '../assets/cat.png';
+import cat from '../../assets/cat.png';
 
 interface Props {
   deliveryData: DeliveryResponse;
