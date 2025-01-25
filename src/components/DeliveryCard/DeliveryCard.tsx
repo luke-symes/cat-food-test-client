@@ -1,4 +1,4 @@
-import cat from '../../assets/cat.png';
+import cat from '/cat.png';
 import { DeliverySchemaType } from '../../schemas/delivery';
 import { Button } from '../Button';
 import { PromotionalLabel } from '../PromotionalLabel';
