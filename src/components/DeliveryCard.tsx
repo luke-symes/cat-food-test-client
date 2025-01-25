@@ -14,9 +14,14 @@ export function DeliveryCard({ deliveryData }: Props) {
         className="bg-cover bg-center flex-1"
         style={{ backgroundImage: `url(${cat})` }}
       />
-      <div className="flex-[1.5]">
-        <h2>{title}</h2>
-        <p>{message}</p>
+      <div className="flex-[1.5] p-4">
+        <div className="flex flex-col gap-4">
+          <h2 className="text-emerald-500 font-semibold text-lg">{title}</h2>
+          <div>{message}</div>
+          <div className="font-semibold">
+            Total price: £{totalPrice.toFixed(2)}
+          </div>
+        </div>
       </div>
     </div>
   );
