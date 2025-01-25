@@ -42,7 +42,7 @@ export function DeliveryCard({ deliveryData }: Props) {
       {freeGift && (
         <PromotionalLabel
           label="Free gift"
-          className="md:-top-2 md:-right-2 md:left-auto md:translate-x-0 -bottom-4 left-1/2 -translate-x-1/2"
+          className="md:-top-2 md:-right-2 md:left-auto md:translate-x-0 -bottom-4 left-1/2 -translate-x-1/2 md:rotate-6 -rotate-6"
         />
       )}
     </div>
