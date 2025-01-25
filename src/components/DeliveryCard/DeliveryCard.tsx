@@ -1,4 +1,4 @@
-import { DeliveryResponse } from '../types/delivery';
+import { DeliveryResponse } from '../../types/delivery';
 import cat from '../assets/cat.png';
 
 interface Props {
