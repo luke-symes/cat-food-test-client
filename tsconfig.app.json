@@ -22,7 +22,11 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
 
-    "types": ["@vitest/browser/providers/playwright"]
+    "types": [
+      "vitest/globals",
+      "@testing-library/jest-dom",
+      "@vitest/browser/providers/playwright"
+    ]
   },
   "include": ["src"]
 }
