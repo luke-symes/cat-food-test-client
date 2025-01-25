@@ -9,9 +9,11 @@ function App() {
   if (error) console.error(error);
 
   return (
-    <div className="w-screen h-screen md:p-24 p-8 bg-neutral-200">
-      {data && <DeliveryCard deliveryData={data} />}
-    </div>
+    <main>
+      <div className="w-screen h-screen md:p-24 p-8 bg-neutral-200">
+        {data && <DeliveryCard deliveryData={data} />}
+      </div>
+    </main>
   );
 }
 
