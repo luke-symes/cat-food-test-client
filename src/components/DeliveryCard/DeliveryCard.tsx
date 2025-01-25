@@ -1,6 +1,7 @@
 import { DeliveryResponse } from '../../types/delivery';
 import cat from '../../assets/cat.png';
 import { Button } from '../Button';
+import { PromotionalLabel } from '../PromotionalLabel';
 
 interface Props {
   deliveryData: DeliveryResponse;
@@ -12,7 +13,7 @@ export function DeliveryCard({ deliveryData }: Props) {
   function handleClick() {}
 
   return (
-    <div className="border-[1px] border-neutral-300 flex h-[244px] min-w-[752px]">
+    <div className="border-[1px] border-neutral-300 flex h-[244px] min-w-[752px] relative">
       <div
         className="bg-cover bg-center flex-1"
         style={{ backgroundImage: `url(${cat})` }}
@@ -35,6 +36,8 @@ export function DeliveryCard({ deliveryData }: Props) {
           />
         </div>
       </div>
+
+      {freeGift && <PromotionalLabel label="Free gift" />}
     </div>
   );
 }
