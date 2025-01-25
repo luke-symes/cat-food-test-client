@@ -1,10 +1,10 @@
-import { DeliveryResponse } from '../../types/delivery';
 import cat from '../../assets/cat.png';
+import { DeliverySchemaType } from '../../schemas/delivery';
 import { Button } from '../Button';
 import { PromotionalLabel } from '../PromotionalLabel';
 
 interface Props {
-  deliveryData: DeliveryResponse;
+  deliveryData: DeliverySchemaType;
 }
 
 export function DeliveryCard({ deliveryData }: Props) {
