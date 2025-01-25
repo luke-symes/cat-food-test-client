@@ -1,10 +1,11 @@
-import cat from './assets/cat.png';
+import { DeliveryCard } from './components/DeliveryCard';
+import { mockDelivery } from './mocks/delivery';
 
 function App() {
   return (
-    <>
-      <img src={cat}></img>
-    </>
+    <div>
+      <DeliveryCard deliveryData={mockDelivery} />
+    </div>
   );
 }
 
