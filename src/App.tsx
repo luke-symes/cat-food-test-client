@@ -3,7 +3,7 @@ import { mockDelivery } from './mocks/delivery';
 
 function App() {
   return (
-    <div>
+    <div className="w-screen h-screen p-24">
       <DeliveryCard deliveryData={mockDelivery} />
     </div>
   );
