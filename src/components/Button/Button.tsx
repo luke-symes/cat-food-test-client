@@ -18,7 +18,7 @@ export function Button({
   const Element = as;
 
   const classes = classNames(
-    'inline-block rounded-sm w-44 p-2 uppercase text-center',
+    'inline-block rounded-sm w-44 p-2 uppercase text-center cursor-pointer',
     {
       'bg-emerald-500 text-white': variant === 'primary',
       'bg-transparent text-emerald-500 border-[1px] border-emerald-500':
