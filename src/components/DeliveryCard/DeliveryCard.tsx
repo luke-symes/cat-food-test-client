@@ -17,7 +17,7 @@ export function DeliveryCard({ deliveryData }: Props) {
   return (
     <div className="border-[1px] border-neutral-300 flex h-[244px] md:w-[752px] relative">
       <div
-        className="bg-cover bg-center flex-1"
+        className="bg-cover bg-center md:flex-1 md:rounded-none md:block rounded-full absolute -top-6 md:translate-x-0 left-1/2 -translate-x-1/2 md:w-auto md:h-auto w-12 h-12 md:static"
         style={{ backgroundImage: `url(${cat})` }}
       />
       <div className="flex-[1.5] flex flex-col p-6 justify-between">
