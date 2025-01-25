@@ -10,9 +10,24 @@ export default meta;
 type Story = StoryObj<typeof Button>;
 
 export const Primary: Story = {
-  args: { children: 'See details' },
+  args: {
+    children: 'See details',
+    onClick: () => {
+      return;
+    },
+  },
 };
 
 export const Secondary: Story = {
-  args: { children: 'Edit delivery' },
+  args: {
+    children: 'Edit delivery',
+    variant: 'secondary',
+    onClick: () => {
+      return;
+    },
+  },
+};
+
+export const AsLink: Story = {
+  args: { children: 'Edit delivery', as: 'a', href: 'https://catfood.com' },
 };

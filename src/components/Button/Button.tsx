@@ -1,11 +1,34 @@
+import classNames from 'classnames';
+
 interface Props {
   as?: 'button' | 'a';
   children: React.ReactNode;
-  variant: 'primary' | 'secondary';
+  variant?: 'primary' | 'secondary';
+  onClick?: () => void;
+  href?: `https://${string}`;
 }
 
-export function Button({ as = 'button', children }: Props) {
+export function Button({
+  as = 'button',
+  children,
+  variant = 'primary',
+  onClick,
+  href,
+}: Props) {
   const Element = as;
 
-  return <Element>{children}</Element>;
+  const classes = classNames(
+    'inline-block rounded-sm w-44 p-2 uppercase text-center',
+    {
+      'bg-emerald-500 text-white': variant === 'primary',
+      'bg-transparent text-emerald-500 border-[1px] border-emerald-500':
+        variant === 'secondary',
+    },
+  );
+
+  return (
+    <Element onClick={onClick} href={href} className={classes}>
+      {children}
+    </Element>
+  );
 }
