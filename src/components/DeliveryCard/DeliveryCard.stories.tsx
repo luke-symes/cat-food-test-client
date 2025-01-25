@@ -7,6 +7,13 @@ const meta: Meta<typeof DeliveryCard> = {
   parameters: {
     layout: 'centered',
   },
+  decorators: [
+    (Story) => (
+      <main>
+        <Story />
+      </main>
+    ),
+  ],
 };
 export default meta;
 

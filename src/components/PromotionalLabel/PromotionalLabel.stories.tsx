@@ -4,6 +4,13 @@ import { PromotionalLabel } from './PromotionalLabel';
 
 const meta: Meta<typeof PromotionalLabel> = {
   component: PromotionalLabel,
+  decorators: [
+    (Story) => (
+      <main>
+        <Story />
+      </main>
+    ),
+  ],
 };
 export default meta;
 
