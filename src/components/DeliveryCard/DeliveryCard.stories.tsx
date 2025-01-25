@@ -4,13 +4,9 @@ import { DeliveryCard } from './DeliveryCard';
 
 const meta: Meta<typeof DeliveryCard> = {
   component: DeliveryCard,
-  decorators: [
-    (Story) => (
-      <div className="max-w-lg">
-        <Story />
-      </div>
-    ),
-  ],
+  parameters: {
+    layout: 'centered',
+  },
 };
 export default meta;
 
