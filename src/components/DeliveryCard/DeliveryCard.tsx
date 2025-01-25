@@ -10,7 +10,9 @@ interface Props {
 export function DeliveryCard({ deliveryData }: Props) {
   const { title, message, freeGift, totalPrice } = deliveryData;
 
-  function handleClick() {}
+  function handleClick() {
+    // TODO: open dialog for delivery details
+  }
 
   return (
     <div className="border-[1px] border-neutral-300 flex h-[244px] min-w-[752px] relative">
@@ -37,7 +39,7 @@ export function DeliveryCard({ deliveryData }: Props) {
         </div>
       </div>
 
-      {freeGift && <PromotionalLabel label="Free gift" />}
+      {freeGift && <PromotionalLabel label="Free gift" position="top-right" />}
     </div>
   );
 }
