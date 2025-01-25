@@ -22,7 +22,7 @@ export function DeliveryCard({ deliveryData }: Props) {
       />
       <div className="flex-[1.5] flex flex-col p-6 gap-6">
         <div className="flex flex-col gap-4">
-          <h2 className="text-emerald-500 font-semibold text-lg">{title}</h2>
+          <h2 className="text-emerald-700 font-semibold text-lg">{title}</h2>
           <div>{message}</div>
           <div className="font-semibold">
             Total price: £{totalPrice.toFixed(2)}
