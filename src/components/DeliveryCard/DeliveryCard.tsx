@@ -9,6 +9,8 @@ interface Props {
 export function DeliveryCard({ deliveryData }: Props) {
   const { title, message, freeGift, totalPrice } = deliveryData;
 
+  function handleClick() {}
+
   return (
     <div className="border-[1px] border-neutral-300 flex h-[244px] min-w-[752px]">
       <div
@@ -25,8 +27,12 @@ export function DeliveryCard({ deliveryData }: Props) {
         </div>
 
         <div className="flex gap-4">
-          <Button label="See details" />
-          <Button label="Edit delivery" />
+          <Button label="See details" onClick={handleClick} />
+          <Button
+            as="a"
+            label="Edit delivery"
+            href="https://catfood.com/edit"
+          />
         </div>
       </div>
     </div>
