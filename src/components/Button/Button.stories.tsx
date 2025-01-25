@@ -11,7 +11,7 @@ type Story = StoryObj<typeof Button>;
 
 export const Primary: Story = {
   args: {
-    children: 'See details',
+    label: 'See details',
     onClick: () => {
       return;
     },
@@ -20,7 +20,7 @@ export const Primary: Story = {
 
 export const Secondary: Story = {
   args: {
-    children: 'Edit delivery',
+    label: 'Edit delivery',
     variant: 'secondary',
     onClick: () => {
       return;
@@ -29,5 +29,5 @@ export const Secondary: Story = {
 };
 
 export const AsLink: Story = {
-  args: { children: 'Edit delivery', as: 'a', href: 'https://catfood.com' },
+  args: { label: 'Edit delivery', as: 'a', href: 'https://catfood.com' },
 };

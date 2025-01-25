@@ -2,7 +2,7 @@ import classNames from 'classnames';
 
 interface Props {
   as?: 'button' | 'a';
-  children: React.ReactNode;
+  label: string;
   variant?: 'primary' | 'secondary';
   onClick?: () => void;
   href?: `https://${string}`;
@@ -10,7 +10,7 @@ interface Props {
 
 export function Button({
   as = 'button',
-  children,
+  label,
   variant = 'primary',
   onClick,
   href,
@@ -28,7 +28,7 @@ export function Button({
 
   return (
     <Element onClick={onClick} href={href} className={classes}>
-      {children}
+      {label}
     </Element>
   );
 }
